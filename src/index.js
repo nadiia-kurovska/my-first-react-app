@@ -26,19 +26,8 @@ render(){
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const elem = React.createElement(Header, {titleText: 'how props can work'});
 
-const counter1 = React.createElement(Counter);
-
-const container = React.createElement(
-  React.Fragment,
-  {},
-  elem,
-  counter1,
-  greeting1
-)
-
-root.render(container); //takes only one element
+root.render(<App />); //takes only one element
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
